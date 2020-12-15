@@ -8,7 +8,9 @@
 | ------------- | ------------------------------------------- | ------------------------------------------------ |
 | Daniel Leightley| [DrDanL](https://github.com/DrDanL) | [@_Dr_Daniel](https://twitter.com/_Dr_Daniel) |
 
-Maintenance Status: Actively Maintained
+Maintenance Status: Actively Maintained.
+
+Hudge credit to [ciitamjadibraheem UsageStats Package](https://github.com/ciitamjadibraheem/UsageStats).
 
 ## Installation
 
@@ -86,6 +88,4 @@ TBC
 
 ## Further info
 
-- [Android](https://firebase.google.com/docs/android/setup)
-- [iOS](https://firebase.google.com/docs/analytics/get-started?platform=ios)
-- [Web](https://firebase.google.com/docs/analytics/get-started?platform=web)
+- [Android](https://developer.android.com/reference/android/app/usage/UsageStats)
