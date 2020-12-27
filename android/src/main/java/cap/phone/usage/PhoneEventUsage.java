@@ -39,19 +39,8 @@ import static android.app.AppOpsManager.OPSTR_GET_USAGE_STATS;
 public class PhoneEventUsage extends Plugin {
 
     /**
-     * Sample method
-     */
-    @PluginMethod
-    public void echo(PluginCall call) {
-        String value = call.getString("value");
-
-        JSObject ret = new JSObject();
-        ret.put("value", value);
-        call.success(ret);
-    }
-
-    /**
      * Enable phone usage app tracking by directing user to give permission
+     * @param call - resolve
      */
     @PluginMethod()
     public void enable(PluginCall call) {
@@ -75,10 +64,8 @@ public class PhoneEventUsage extends Plugin {
         boolean result_return = false;
 
         if (mode == AppOpsManager.MODE_DEFAULT) {
-            Log.d("Test Mode Default", Boolean.toString((context.getApplicationContext().checkCallingOrSelfPermission(android.Manifest.permission.PACKAGE_USAGE_STATS) == PackageManager.PERMISSION_GRANTED)));
             result_return = (context.getApplicationContext().checkCallingOrSelfPermission(android.Manifest.permission.PACKAGE_USAGE_STATS) == PackageManager.PERMISSION_GRANTED);
         } else {
-            Log.d("Test Mode Allowed", Boolean.toString((mode == MODE_ALLOWED)));
             result_return = (mode == MODE_ALLOWED);
         }
 

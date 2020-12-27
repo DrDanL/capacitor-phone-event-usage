@@ -5,8 +5,7 @@ declare module '@capacitor/core' {
 }
 
 export interface PhoneEventUsagePlugin {
-  enable(): Promise<void>;
-  echo(options: { value: string }): Promise<{ value: string }>;
+  enable(): Promise<{}>;
   getPermissionStatus(): Promise<{}>;
   getAppUsage(duration: number): Promise<{}>;
 }

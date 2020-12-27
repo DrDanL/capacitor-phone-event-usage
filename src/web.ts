@@ -9,14 +9,9 @@ export class PhoneEventUsageWeb extends WebPlugin implements PhoneEventUsagePlug
     });
   }
 
-  async enable(): Promise<void> {
+  async enable(): Promise<{}> {
     //No web enabled
-    console.log('Enable trigger')
-  }
-
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
+    return {'enable': false}
   }
 
   async getPermissionStatus(): Promise<{}> {
