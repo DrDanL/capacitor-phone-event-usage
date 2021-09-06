@@ -1,7 +1,8 @@
 {
   "name": "capacitor-phone-event-usage",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Get phone app usage events",
+  "homepage": "https://github.com/DrDanL/capacitor-phone-event-usage",
   "main": "dist/plugin.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -56,9 +57,9 @@
   "swiftlint": "@ionic/swiftlint-config",
   "repository": {
     "type": "git",
-    "url": "capacitor-phone-event-usage"
+    "url": "https://github.com/DrDanL/capacitor-phone-event-usage"
   },
   "bugs": {
-    "url": "capacitor-phone-event-usage/issues"
+    "url": "https://github.com/DrDanL/capacitor-phone-event-usage/issues"
   }
 }

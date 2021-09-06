@@ -83,7 +83,7 @@ public class PhoneEventUsage extends Plugin {
         Context context = this.getContext();
 
         Integer days = call.getInt("duration", 2);
-        Log.d("Number of days requested", Integer.toString(days));
+        Log.d("Number of data days requested", Integer.toString(days));
 
         //Create usage manager
         UsageStatsManager usm = (UsageStatsManager) context.getSystemService(context.USAGE_STATS_SERVICE);
@@ -101,7 +101,7 @@ public class PhoneEventUsage extends Plugin {
             // get total time of apps usage to calculate the usagePercentage for each app
             long totalTime = usageStatsList.stream().map(UsageStats::getTotalTimeInForeground).mapToLong(Long::longValue).sum();
 
-            //fill the appsList
+            //fill the appsList with data
             JSObject appsList = new JSObject();
 
             for (UsageStats usageStats : usageStatsList) {
